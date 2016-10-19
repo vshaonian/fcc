@@ -1,0 +1,29 @@
+*{margin: 0;padding: 0}
+.message{
+  width: 90%;
+  margin: 10px 5%;
+  height: 500px;
+  border: 1px solid gray;
+}
+form{
+  text-align: center;
+}
+.s_txt{
+  padding: 10px;
+  width: 400px;
+  margin-bottom: 20px;
+}
+.shut, .clc{
+  height: 40px;
+  width: 150px;
+  background-color: #fff;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.shut {
+  color: red;
+  border-color: red;
+}
+.clc{
+  color: gray;
+}
