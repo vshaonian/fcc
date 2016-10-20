@@ -1,29 +1,30 @@
 *{margin: 0;padding: 0}
 .message{
-  width: 90%;
-  margin: 10px 5%;
+  width: 800px;
+  margin: 10px 10px;
   height: 500px;
   border: 1px solid gray;
+  font-size: 20px;
 }
-form{
+.fff{
   text-align: center;
 }
 .s_txt{
   padding: 10px;
-  width: 400px;
+  width: 350px;
   margin-bottom: 20px;
 }
-.shut, .clc{
+#shut, #clc{
   height: 40px;
   width: 150px;
   background-color: #fff;
   border: 1px solid gray;
   border-radius: 5px;
 }
-.shut {
+#shut {
   color: red;
   border-color: red;
 }
-.clc{
+#clc{
   color: gray;
 }
