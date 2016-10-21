@@ -1,13 +1,25 @@
 *{margin: 0;padding: 0}
 .message{
-  width: 800px;
-  margin: 10px 10px;
+  width: 90%;
+  margin: 10px 5%;
   height: 500px;
   border: 1px solid gray;
-  font-size: 20px;
+  position: absolute;
+}
+.show{
+  width: 800px;
 }
 .fff{
   text-align: center;
+  position: absolute;
+  top:550px;
+  right: 0;
+  left: 0;
+}
+.move div{
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
 }
 .s_txt{
   padding: 10px;

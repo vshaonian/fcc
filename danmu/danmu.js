@@ -1,4 +1,4 @@
-// 创建数据库引用。最好自己创建一个应用，把 danmu 即 `appId` 换成你自己的
+// 创建数据库引用。
 $(document).ready(function() {
   var config = {
     authDomain: "sxydanmu.wilddog.com",
@@ -21,7 +21,7 @@ $(document).ready(function() {
   $("#clc").click(function() {
     ref.remove();//清空云端数据
     arr = [];
-    $(".message").empty();//清空显示框
+    $(".move").empty();//清空显示框
   });
 
   //在显示框显示
@@ -31,7 +31,7 @@ $(document).ready(function() {
     arr.push(text);
     var textObj = $("<div></div>");
     textObj.text(text);
-    $(".message").append(textObj);
+    $(".move").append(textObj);
     moveObj(textObj);
     console.log(text);
   });
@@ -39,7 +39,7 @@ $(document).ready(function() {
   //清屏后
   ref.on('child_removed', function(snapshot) {
     arr = [];
-    $(".message").empty();
+    $(".show").empty();
   });
 
   var topMin = $('.message').offset().top; 	 // 显示框距顶部距离
@@ -66,14 +66,14 @@ $(document).ready(function() {
   }
 
 
-  var getAndRun = function() {
+  var getAndRun = function() { //随机颜色函数
 	if (arr.length > 0) {
 		var n = Math.floor(Math.random() * arr.length + 1) - 1;
 		var textObj = $("<div>" + arr[n] + "</div>");
-		$(".message").append(textObj);
+		$(".move").append(textObj);
 		moveObj(textObj);
 	}
-	setTimeout(getAndRun, 1000);
+	setTimeout(getAndRun, 3000);
   }
 
   var getRandomColor = function() {
