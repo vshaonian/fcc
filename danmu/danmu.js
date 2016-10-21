@@ -66,7 +66,7 @@ $(document).ready(function() {
   }
 
 
-  var getAndRun = function() { //随机颜色函数
+  var getAndRun = function() { //弹幕输出
 	if (arr.length > 0) {
 		var n = Math.floor(Math.random() * arr.length + 1) - 1;
 		var textObj = $("<div>" + arr[n] + "</div>");
@@ -76,7 +76,7 @@ $(document).ready(function() {
 	setTimeout(getAndRun, 3000);
   }
 
-  var getRandomColor = function() {
+  var getRandomColor = function() {//随机颜色函数
 	return '#' + (function(h) {
 		return new Array(7 - h.length).join("0") + h
 	})((Math.random() * 0x1000000 << 0).toString(16))
