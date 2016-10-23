@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>天气预报</title>
+  <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+  <header>
+    <h1>天气应用</h1>
+    <input id="city" type="txt" name="name" value="郑州">
+    <button id="search" type="button" name="button">查询</button>
+  </header>
+  <div class="main">
+    <div class="realtime">
+      <span id="riqi"></span>
+      <span id="gengxin"></span>
+      <span id="week"></span>
+      <span id="moon"></span>
+    </div>
+    <div class="weather">
+      <span id="weather"></span>
+      <span id="temp"></span>
+      <span id="damp"></span>
+    </div>
+    <div class="life">
+      <p id="chuanyi"></p>
+      <p id="ganmao"></p>
+      <p id="wuran"></p>
+      <p id="ziwaixian"></p>
+    </div>
+    <div class="future"></div>
+  </div>
+  <footer></footer>
+  <script src="http://code.jquery.com/jquery.min.js" charset="utf-8"></script>
+  <script src="weather.js"></script>
+</body>
+</html>
