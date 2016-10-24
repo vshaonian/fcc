@@ -4,7 +4,17 @@ $("#search").click(function() {
     "dtype" : "jsonp",
     "key" : "f5e8458c189862575a6f1f304fcdfacf"
   },function(data) {
-
+    if(data.reason == "successed!") {
+    //时间
+    var realtime = data.result.data.realtime;
+    var riqij = realtime.date;
+    $("#riqi").text("日期：" + riqij);
+    var gengxinj = realtime.time;
+    $("#gengxin").text("更新时间：" + gengxinj);
+    var weekj = realtime.week;
+    $("#week").text("星期：" + weekj);
+    var moonj = realtime.moon;
+    $("#moon").text("阴历：" + moonj);
 
     //天气
     var realWeather = data.result.data.realtime.weather;
@@ -18,7 +28,6 @@ $("#search").click(function() {
 
     //指数
     var life = data.result.data.life.info;
-
     var chuanyij = life.chuanyi;
     $("#chuanyi").text("穿衣指数：" + chuanyij);
     var ganmaoj = life.ganmao;
@@ -31,10 +40,12 @@ $("#search").click(function() {
     for (var i = 0; i < futureWeather.length; i++) {
       $(".future").append("<div>"+"<p>"+futureWeather[i].date+"</p>"+"<p>"+futureWeather[i].info.day+"</p>"+"<p>"+futureWeather[i].info.night+"</p>"+"</div>");
     }
+  }else {
+    alert("请输入正确的城市名！")
+    location.reload() ;
+  }
 
 
   })
-  // var wea = document.getElementById("weather");
-  // wea.innerHTML = data.result.data.realtime.weather.info;
-  //$("#weather").html("<span>" + '当前:  ' + weather + "</span>")
+
 })
