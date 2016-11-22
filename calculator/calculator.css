@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #56351E;
+  font-size: 18px;
+}
+.wrap{
+  width: 320px;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #C47335;
+  text-align: center;
+}
+p{
+  margin-bottom: 10px;
+  font-family: 'Oleo Script', cursive;
+  color: #F19953;
+}
+input{
+  width: 305px;
+  height: 30px;
+  text-align: right;
+  background-color: #F19953;
+  border: none;
+}
+.btn-wrap{
+  margin-top: 10px;
+}
+.btn-wrap button{
+  width: 70px;
+  height: 70px;
+  margin-bottom: 5px;
+  background-color: #fff;
+  border: none;
+  color: #f19953;
+}
