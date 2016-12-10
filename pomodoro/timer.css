@@ -15,24 +15,35 @@ h1{
 }
 .top>div{
   display: inline-block;
+  margin: 0 15px;
 }
 .top p{
   font-family: Open Sans, Arial;
   margin: 20px;
+  font-size: 25px;
 }
 .top span{
-  margin: 0 10px;
+  margin: 0 5px;
   font-size: 35px;
 }
 .top button{
   cursor: pointer;
   vertical-align: 20%;
+  padding: 0 10px;
   font-size: 25px;
   background: #333;
   border: none;
   color: #fff;
 }
 .top button:checked{
+  outline: none;
+  border: none;
+}
+.top button:active{
+  outline: none;
+  border: none;
+}
+.top button:visited{
   outline: none;
   border: none;
 }
