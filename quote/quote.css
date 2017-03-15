@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
 *{
     padding: 0;
     margin: 0;
@@ -21,14 +22,27 @@ body{
     background-color: #fff;
     color: rgb(119, 177, 169);
 }
+i{
+    font-size:1.0em;
+    margin-right: 0.4em;
+    display: inline-block;
+    position: relative;
+    top: 20px;
+}
 .wrap div{
     font-size: 24px;
 }
+#text{
+    text-indent: 20px;
+}
 #author{
+    margin-top: 50px;
     text-align: right;
 }
 #btn{
-    float: right;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
     border:none;
     border-radius:3px;
     color:#fff;
