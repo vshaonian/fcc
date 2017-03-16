@@ -11,10 +11,8 @@ $(document).ready(function() {
                 format: 'jsonp'
             },
             success: function(response) {
-                console.log(response);
                 document.getElementById("text").innerHTML = response.quoteText;
                 document.getElementById("author").innerHTML = "--" + response.quoteAuthor;
-                console.log($('#text'))
             }
         });
     }

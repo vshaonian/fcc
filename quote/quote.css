@@ -5,9 +5,6 @@
 }
 body{
     background: rgb(119, 177, 169);
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/
 }
 .wrap{
     width: 70%;
@@ -27,7 +24,7 @@ i{
     margin-right: 0.4em;
     display: inline-block;
     position: relative;
-    top: 20px;
+    top: 10px;
 }
 .wrap div{
     font-size: 24px;
@@ -36,8 +33,10 @@ i{
     text-indent: 20px;
 }
 #author{
-    margin-top: 50px;
     text-align: right;
+    position: absolute;
+    bottom: 70px;
+    right: 30px;
 }
 #btn{
     position: absolute;
