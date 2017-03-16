@@ -38,6 +38,22 @@ i{
     bottom: 70px;
     right: 30px;
 }
+.twitter-share-button{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    border:none;
+    border-radius:3px;
+    color:#fff;
+    padding: 5px 18px 5px 18px;
+    background-color:#333;
+    outline:none;
+    text-decoration: none;
+}
+.twitter-share-button i{
+    position: static;
+    margin-right: 0;
+}
 #btn{
     position: absolute;
     bottom: 30px;
